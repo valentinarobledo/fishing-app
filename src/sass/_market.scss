@@ -1,0 +1,13 @@
+.card-market-item{
+	box-shadow: 0 4px 6px rgba(155, 135, 245, 0.252);
+	padding: 1.5rem;
+	border-radius: 1rem;
+	transition: all 0.3s;
+	&:hover{
+		box-shadow: 0 4px 6px $cosmic-pink;
+	}
+	img{
+		height: 20rem;
+	}
+}
+

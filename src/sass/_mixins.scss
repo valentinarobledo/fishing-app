@@ -1,0 +1,21 @@
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin cosmic-card {
+	background: rgba(42, 38, 61, 0.7);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(155, 135, 245, 0.3);
+	border-radius: 1rem;
+	box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+	overflow: hidden;
+	transition: all 0.3s ease;
+	
+	&:hover {
+		box-shadow: 0 8px 32px rgba(155, 135, 245, 0.2);
+		border-color: rgba(155, 135, 245, 0.5);
+		transform: scale(1.02);
+	}
+}

@@ -1,4 +1,6 @@
 
+import { Star, CircleDollarSign } from "lucide-react";
+
 interface PodiumProps {
 	podium: {
 		rank: number;
@@ -11,26 +13,45 @@ interface PodiumProps {
 
 const Podium: React.FC<PodiumProps> = ({ podium }) => {
 	return (
-		<div className="flex flex-col">
-			<h2 className="text-4xl font-bold mb-4">Podium</h2>
-			{podium.map((player) => (
-				<div
-					key={player.rank}
-					className={`flex items-center justify-between p-4 rounded-lg ${
-						player.rank === 0
-							? 'bg-gold'
-							: player.rank === 1
-							? 'bg-silver'
-							: 'bg-bronze'
-					}`}
-				>
-					<span className="text-xl font-bold">{player.username}</span>
-					<span className="text-lg">{player.level} Level</span>
-					<span className="text-lg">{player.xp} XP</span>
-					<span className="text-lg">{player.gold} Gold</span>
+		<div className="podium-container">
+			<h2 className="podium-title text-cosmic-purple">Top Cosmic Fishers</h2>
+			<div className="podium">
+				<div className="podium-player order-2 sm:order-1 second">
+					<div className="user">
+						<img src="/images/second_place.png" alt="second" />
+						<span className="player-name">{podium[1].username}</span>
+					</div>
+					<div className="user-info">
+						<span className="font-extralight flex items-center justify-center"><Star size={16} className="mx-2 text-cosmic-yellow" /> {podium[1].level}</span>
+						<span className="font-extralight text-cosmic-teal">{podium[1].xp}</span>
+						<span className="font-extralight flex items-center justify-center"><CircleDollarSign size={16} className="mx-2 text-cosmic-yellow" />{podium[1].gold}</span>
+					</div>
 				</div>
-			))}
+				<div className="podium-player order-1 sm:order-2 first">
+					<div className="user">
+						<img src="/images/first_place.png" alt="first" />
+						<span className="player-name">{podium[0].username}</span>
+					</div>
+					<div className="user-info">
+						<span className="font-extralight flex items-center justify-center"><Star size={16} className="mx-2 text-cosmic-yellow" /> {podium[0].level}</span>
+						<span className="font-extralight text-cosmic-teal">{podium[0].xp}</span>
+						<span className="font-extralight flex items-center justify-center"><CircleDollarSign size={16} className="mx-2 text-cosmic-yellow" />{podium[0].gold}</span>
+					</div>
+				</div>
+				<div className="podium-player order-3 sm:order-3 third">
+					<div className="user">
+						<img src="/images/third_place.png" alt="third" />
+						<span className="player-name">{podium[2].username}</span>
+					</div>
+					<div className="user-info">
+						<span className="font-extralight flex items-center justify-center"><Star size={16} className="mx-2 text-cosmic-yellow" />{podium[2].level}</span>
+						<span className="font-extralight text-cosmic-teal">{podium[2].xp}</span>
+						<span className="font-extralight flex items-center justify-center"><CircleDollarSign size={16} className="mx-2 text-cosmic-yellow" /> {podium[2].gold}</span>
+					</div>
+				</div>
+			</div>
 		</div>
+
 	);
 };
 

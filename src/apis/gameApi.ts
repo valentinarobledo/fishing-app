@@ -6,6 +6,10 @@ export interface Market {
 	cost: number,
 }
 
+export interface MarketResponse {
+  items: Market[]
+}
+
 export interface Leaderboard {
   rank: number;
   username: string;
@@ -31,7 +35,8 @@ export async function fetchMarket(): Promise<Market[]> {
   if (!res.ok) {
     throw new Error(`Error fetching market: ${res.status} ${res.statusText}`)
   }
-  return res.json()
+  const data = (await res.json()) as MarketResponse
+  return data.items
 }
 
 export async function fetchLeaderboard(): Promise<Leaderboard[]> {
@@ -39,6 +44,6 @@ export async function fetchLeaderboard(): Promise<Leaderboard[]> {
   if (!res.ok) {
     throw new Error(`Error fetching leaderboard: ${res.status} ${res.statusText}`);
   }
-  const data = (await res.json()) as LeaderboardResponse;
-  return data.players;
+  const data = (await res.json()) as LeaderboardResponse
+  return data.players
 }

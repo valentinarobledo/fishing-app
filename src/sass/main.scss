@@ -1,0 +1,136 @@
+@import './variables';
+@import './mixins';
+@import './animations';
+@import './podium';
+@import './market';
+
+body {
+	background-color: $cosmic-dark;
+	color: white;
+	font-family: 'Exo 2', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-image: 
+    radial-gradient(circle at 25% 25%, rgba(155, 135, 245, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(51, 195, 240, 0.1) 0%, transparent 50%);
+}
+
+// Layout
+.cosmic-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  
+  @media (min-width: 640px) {
+    padding: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    padding: 2rem;
+  }
+}
+
+// Components
+.cosmic-card {
+  @include cosmic-card;
+}
+
+.cosmic-button {
+  background-color: $cosmic-purple;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(155, 135, 245, 0.2);
+  transition: all 0.3s;
+  @include flex-center;
+  gap: 0.5rem;
+  
+  &:hover {
+    background-color: $cosmic-deep-purple;
+  }
+}
+
+.cosmic-button-secondary {
+  background-color: $cosmic-teal;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(51, 195, 240, 0.2);
+  transition: all 0.3s;
+  @include flex-center;
+  gap: 0.5rem;
+  
+  &:hover {
+    background-color: $cosmic-ocean;
+  }
+}
+
+// Text gradient
+.cosmic-text-gradient {
+  background: linear-gradient(90deg, $cosmic-purple, $cosmic-teal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-b{
+	border-bottom-width: 0px !important;
+}
+
+.main-title{
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	background: linear-gradient(90deg, $cosmic-purple, $cosmic-teal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-swim {
+	animation: swim 3s ease-in-out infinite;
+}
+
+.tabs-trigger {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &[data-state='active'] {
+    background-color: $cosmic-purple; 
+    color: white;
+  }
+
+  &.market {
+    &[data-state='active'] {
+      background-color: $cosmic-teal;
+      color: white;
+    }
+  }
+}
+
+.search-bar{
+	border-radius: 0.5rem;
+	position: relative;
+	padding: 0.5rem;
+	.icon{
+		position: absolute;
+		top: 20%;
+		right: 1rem;
+	}
+	input{
+		outline: none;
+		color: gray;
+	}
+}
+
+.table-ranking{
+  tr:hover{
+    background-color:  #15063559;
+  }
+}

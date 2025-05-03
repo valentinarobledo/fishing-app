@@ -25,7 +25,6 @@ const RankTab = () => {
 
 	return (
 		<div className="space-y-8">
-			<h2 className="text-2xl font-bold text-cosmic-purple">LeaderBoard</h2>
 			<Podium podium={podiumPlayers} />
 			<TablePlayers players={players} />
 		</div>

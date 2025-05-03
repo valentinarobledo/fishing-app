@@ -1,0 +1,82 @@
+$cosmic-dark: #1A1F2C;
+$cosmic-purple: #9b87f5;
+$cosmic-deep-purple: #7E69AB;
+$cosmic-teal: #33C3F0;
+$cosmic-ocean: #0EA5E9;
+$cosmic-yellow: #FFD700;
+$cosmic-pink: #FF6B81;
+
+//Text colors
+.text-cosmic-purple {
+  color: $cosmic-purple;
+}
+.text-cosmic-deep-purple{
+	color: $cosmic-deep-purple;
+}
+.text-cosmic-teal{
+	color: $cosmic-teal;
+}
+.text-cosmic-ocean{
+	color: $cosmic-ocean;
+}
+.text-cosmic-yellow{
+	color: $cosmic-yellow;
+}
+.text-cosmic-pink{
+	color: $cosmic-pink;
+}
+
+// Background colors
+.bg-cosmic-purple {
+	background-color: $cosmic-purple;
+}
+.bg-cosmic-deep-purple{
+	background-color: $cosmic-deep-purple;
+}
+.bg-cosmic-teal{
+	background-color: $cosmic-teal;
+}
+.bg-cosmic-ocean{
+	background-color: $cosmic-ocean;
+}
+.bg-cosmic-yellow{
+	background-color: $cosmic-yellow;
+}
+.bg-cosmic-pink{
+	background-color: $cosmic-pink;
+}
+
+.bg-cosmic-dark{
+	background-color: $cosmic-dark;
+}
+
+.bg-gold{
+	background-color: #FFD700;
+}
+
+.bg-silver{
+	background-color: #C0C0C0;
+}
+.bg-bronze{
+	background-color: #CD7F32;
+}
+
+//Border colors
+.border-cosmic-purple {
+	border-color: $cosmic-purple;
+}
+.border-cosmic-deep-purple{
+	border-color: $cosmic-deep-purple;
+}
+.border-cosmic-teal{
+	border-color: $cosmic-teal;
+}
+.border-cosmic-ocean{
+	border-color: $cosmic-ocean;
+}
+.border-cosmic-yellow{
+	border-color: $cosmic-yellow;
+}
+.border-cosmic-pink{
+	border-color: $cosmic-pink;
+}
