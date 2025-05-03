@@ -6,6 +6,7 @@ import path from 'path'
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
+  base: '/fishing-app/',
   plugins: [
     react(), 
     visualizer(),
@@ -14,8 +15,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'DevClub App',
-        short_name: 'DevApp',
+        name: 'Fisher App',
+        short_name: 'FisherApp',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
