@@ -6,7 +6,7 @@ import path from 'path'
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
-  base: '/fisher-app/',
+  base: '/fishing-app/',
   plugins: [
     react(), 
     visualizer(),
