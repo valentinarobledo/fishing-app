@@ -1,1 +1,1 @@
-{"name":"Fisher App","short_name":"FisherApp","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#000000","lang":"en","scope":"/fisher-app/","icons":[{"src":"favicon.svg","sizes":"512x512","type":"image/svg+xml"}]}
+{"name":"Fisher App","short_name":"FisherApp","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#000000","lang":"en","scope":"/fishing-app/","icons":[{"src":"favicon.svg","sizes":"512x512","type":"image/svg+xml"}]}
