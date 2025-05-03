@@ -63,7 +63,7 @@ const MarketTab = () => {
 							{filteredMarket.map((item) => (
 								<div key={item.id} className="card-market-item">
 									<img
-										src='/assets/placeholder.jpg'
+										src='/fishing-app/assets/placeholder.jpg'
 										alt="Galaxy"
 										className="w-full object-cover rounded-md mb-2"
 									/>

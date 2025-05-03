@@ -18,7 +18,7 @@ const Podium: React.FC<PodiumProps> = ({ podium }) => {
 			<div className="podium">
 				<div className="podium-player order-2 sm:order-1 second">
 					<div className="user">
-						<img src="/assets/second_place.png" alt="second" />
+						<img src="/fishing-app/assets/second_place.png" alt="second" />
 						<span className="player-name">{podium[1].username}</span>
 					</div>
 					<div className="user-info">
@@ -29,7 +29,7 @@ const Podium: React.FC<PodiumProps> = ({ podium }) => {
 				</div>
 				<div className="podium-player order-1 sm:order-2 first">
 					<div className="user">
-						<img src="/assets/first_place.png" alt="first" />
+						<img src="/fishing-app/assets/first_place.png" alt="first" />
 						<span className="player-name">{podium[0].username}</span>
 					</div>
 					<div className="user-info">
@@ -40,7 +40,7 @@ const Podium: React.FC<PodiumProps> = ({ podium }) => {
 				</div>
 				<div className="podium-player order-3 sm:order-3 third">
 					<div className="user">
-						<img src="/assets/third_place.png" alt="third" />
+						<img src="/fishing-app/assets/third_place.png" alt="third" />
 						<span className="player-name">{podium[2].username}</span>
 					</div>
 					<div className="user-info">
